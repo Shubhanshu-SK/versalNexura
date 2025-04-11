@@ -7,6 +7,9 @@ function Card({ image, name, position, description }) {
   const showpopUp = ()=>{
     popUp.current.className = popUp.current.className + ' afterpopUP'
     
+    setTimeout(() => {
+      hidepopUp()
+    }, 10000);
   }
   const hidepopUp = ()=>{
   
@@ -41,7 +44,7 @@ function Card({ image, name, position, description }) {
         </div>
         </div>
     </div>
-    
+
     </>
   );
 }
