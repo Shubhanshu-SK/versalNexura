@@ -1,8 +1,25 @@
 import styles from "./card.css";
+import { useRef } from "react";
 function Card({ image, name, position, description }) {
+  const popUp = useRef()
+  
+  
+  const showpopUp = ()=>{
+    popUp.current.className = popUp.current.className + ' afterpopUP'
+    
+  }
+  const hidepopUp = ()=>{
+  
+    popUp.current.className = 'popUp'
+  }
+
   return (
     <>
-    <div className="card">
+   
+
+    <div className="card" onClick={()=>{
+      
+      showpopUp()}}>
       <div className="image-container">
         <img src={image} alt={name} />
         <div className="overlay">
@@ -14,11 +31,17 @@ function Card({ image, name, position, description }) {
         <p>{position}</p>
       </div>
     </div>
-    <div className="popUp">
+    <div ref={popUp} className="popUp">
         <p>
             {description}
         </p>
+      <div className="closeDiv" onClick={hidepopUp}>
+        <div className="close">
+        +
+        </div>
+        </div>
     </div>
+    
     </>
   );
 }
