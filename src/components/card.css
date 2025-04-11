@@ -1,0 +1,180 @@
+/* Reset default styles */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+  .card {
+    width: 280px;
+    min-height: 400px;
+    background-color: #ffffff72 !important;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(234, 234, 234, 0.8);
+ 
+    /* transition: all 250ms ease-out; */
+    /* animation: inView 1s linear ;
+    animation-timeline: view();
+    animation-range-start: 0rem;
+    animation-range-end: contain  10vh; */
+    
+  }
+  
+
+  .image-container {
+    max-width: 100%;
+    height: 280px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .info-container {
+    background-color: #8b3dff !important;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  .info-container h3 {
+    color: white !important;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .info-container p {
+    color: white !important;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+  
+  .overlay {
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    transition: color 1.1s ease-out 0.2s ;
+    padding: 20px;
+  }
+  
+  .overlay p {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 0.8em;
+    position: absolute;
+    top: 2em;
+    padding: 2em;
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Debug styles */
+  .image-container::after {
+    content: 'Image not loaded';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 14px;
+    display: none;
+  }
+  
+  .image-container:empty::after {
+    display: block;
+  }
+  
+  /* Remove unnecessary styles */
+  .card-back, 
+  .card.flipped,
+  .card-inner {
+    transform: none;
+  }
+  
+  /* Add styles for the container in coordinators.module.css */
+  .coordinatorsContainer {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .allContainer {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+  }
+  
+  .popUp{
+    position: fixed;
+    top: 20%;
+    font-size: 1.4em;
+    height: 25rem;
+    width: 40rem;
+    display: hidden;
+    padding: 2rem;
+    opacity: 0;
+    scale: .5;
+    background: #8b3dff;
+    filter: drop-shadow(10px 2px 20px black);
+    color: #8b3dff;
+    border-radius: 10px;
+    transition: color 1s ease;
+    transition: opacity 2s ease-in ;
+    transition: scale 1s ease ;
+    
+  }
+  
+  @media (min-width:645px) {
+    
+    .card:hover + .popUp{
+      display: visible;
+      opacity: 1;
+      scale: 1;
+      color: whitesmoke;
+      z-index: 100;
+    }
+  }
+  @media (man-width:645px) {
+    .card:hover .overlay {
+      opacity: 1;
+      color: whitesmoke;
+    }
+  }
+  

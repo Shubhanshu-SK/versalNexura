@@ -1,0 +1,122 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(4px);
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo img {
+  width: 80px;
+  height: auto;
+  transform: rotate(179.69deg);
+}
+
+/* Navigation Links */
+.elements ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.elements ul li {
+  list-style: none;
+  margin-top: .5em;
+}
+
+.navbar ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  color: white;
+
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #9d4edd;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+
+.navbar ul li a:hover {
+  color: #9b5de5;
+}
+
+/* ✅ Hamburger Menu for Mobile Screens */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+}
+
+/* ✅ Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hamburger:active {
+    transform: rotate(90deg);
+}
+
+
+  .elements {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.elements.active {
+    display: flex;
+    opacity: .7;
+    transform: translateY(0);
+    width: 100%;
+}
+
+  .elements ul {
+      flex-direction: column;
+      gap: 20px;
+      width: 100%; 
+      text-align: right;
+  }
+
+}

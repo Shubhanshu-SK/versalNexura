@@ -1,0 +1,59 @@
+/* Container */
+.visionMissionContainer {
+    text-align: center;
+    color: #391054;
+    padding: 40px 20px;
+  }
+  
+  /* Main title */
+  .title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  /* Box container for vision & mission */
+  .visionMissionContent {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual box styling */
+  .box {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 300px;
+    width: 90%;
+    box-shadow: 0px 8px 15px rgba(157, 118, 204, 0.662);
+    transition: transform 0.3s ease-in-out;
+    height: auto;
+
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Box headings */
+  .box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c2a1ff;
+  }
+  
+  /* Box paragraphs */
+  .box p {
+    font-size: 1.2rem;
+    color: #ddd;
+  }
+  
+  /* Subtitle */
+  .subtitle {
+    font-size: 3rem;
+    margin-top: 40px;
+    text-decoration: underline;
+  }
+  

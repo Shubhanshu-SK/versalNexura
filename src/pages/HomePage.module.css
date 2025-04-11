@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* color: black; */
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main Content - Flexbox for responsiveness */
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    width: 90%;
+    padding-top: 110px;
+    position: relative;
+}
+
+/* Logo Styling */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 270px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    transform: rotate(180deg);
+    filter: drop-shadow(10px 5px 40px rgba(102, 51, 153, 0.8) );
+    
+}
+
+/* Text Content Styling */
+.textContent {
+    max-width: 750px;
+    padding: 20px;
+    text-align: center;
+    left: 0;
+}
+
+.textContent h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    animation: slideH1 0.8s ease-out 1 reverse;
+}
+
+.textContent p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 10%;
+    line-height: 1.6;
+    text-align: left;
+    animation: slide 1s ease-out 1 reverse;
+}
+
+
+@keyframes slide {
+    from{
+        transform: translate(0);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-100px);
+        opacity: 0;
+    }
+}
+@keyframes slideH1 {
+    from{
+        opacity: 1;
+        transform: translate(0);
+    }
+    to{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+}
+@keyframes slidemoto {
+    from{
+        opacity: 1;
+        transform: translate(0);
+       
+    }
+    to{
+        opacity: 0;
+        transform: translate(100px);
+        
+    }
+}
+
+@keyframes showLogo {
+    from{
+        opacity: 1;
+       
+       
+    }
+    to{
+        opacity: 0;
+        
+        
+    }
+}
+/* editted code */
+.motoContainer p{
+    font-size: 1.2rem;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+    animation: slidemoto 0.8s ease-out 1 reverse;
+}
+
+.motoContainer span{
+    font-size: 1.5em;
+    font-weight: 700;    
+    color: #7209b7;
+ 
+}
+.textContent p::first-line {
+    font-size: 1.5em;
+}
+
+.textContent h1 b{
+    font-size: 48px;
+    color: #7209b7;
+    font-weight: 800;
+    width: 100%;
+    margin: 0 1rem;
+    animation: slideH1 0.5s ease-out 1 reverse;
+}
+
+@media only screen and (min-width: 1224px) {
+    .logo{
+        width: initial;
+        animation: showLogo 1.2s ease  1 reverse;
+        filter: opacity(.99);
+       
+    }
+    .mainContent{
+        flex-direction: row-reverse;
+        gap: 0;
+        
+    }
+    .mainContent > *{
+        width: 30%;
+    }
+    .motoContainer p{
+        font-size: 3.8rem;
+        text-align: right;
+        
+    }
+    
+    
+    .textContent h1{
+        animation: slideH1 0.8s ease-out 1 reverse;
+        
+    }
+    .textContent p {
+        line-height: normal;
+        animation: slide 1s ease-out 1 reverse;
+        
+    }
+
+}
+@media (max-width: 1024px) {
+    .mainContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .textContent h1 {
+        font-size: 32px;
+        
+    }
+
+    .textContent p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .mainContent {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .textContent {
+        max-width: 100%;
+    }
+
+    .textContent h1 {
+        font-size: 28px;
+    }
+
+    .textContent p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .textContent h1 {
+        font-size: 24px;
+    }
+
+    .textContent p {
+        font-size: 0.85rem;
+    }
+
+    .logo {
+        width: 150px;
+    }
+    .motoContainer p {
+        font-size: 2.3rem;
+    }
+}
+
+.logoContainer{
+    animation: moon 2.7s linear infinite alternate;
+    
+}
+
+@keyframes moon {
+    0%{
+        transform: translate(4px,5px);
+        left: 2px;
+  
+    }
+    50%{
+
+        transform: translate(4px,10px);
+        left:13px;
+    }
+    
+    100%{
+        transform: translate(12px,5px);
+        left:4px;
+    }
+}
+
+@keyframes sectionAnimation {
+    from{
+      transform: translateY(100px);
+      opacity: 1;
+      scale: 1;
+    }
+    to{
+      transform: translateY(0px);
+      opacity: 0.5;
+      scale: 1.3;
+  
+    }
+  }
+.container{
+    animation: sectionAnimation  linear 150ms ;
+  animation-timeline: view(0 auto);
+  
+}

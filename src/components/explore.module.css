@@ -1,0 +1,156 @@
+@keyframes showUp {
+    0%{scale: 0.5; opacity: 0;}
+   
+    100%{scale: 1; opacity: 1;}
+}
+@keyframes leftshow{
+    0%{transform: translate(2rem) ; }
+   
+    50%{transform: translate(-1rem) ; }
+    100%{transform: translate(2rem) ; }
+}
+
+.flexColCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    animation: showUp 750ms linear 1 ;
+    
+}
+
+.heading{
+
+    color: #391054;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    margin: 4px 0;
+
+}
+.headingText{
+    padding: 1.1rem 4rem;
+    margin-bottom: 2.4rem;
+    text-align: center;
+    color: white;
+}
+
+.eventDiv{
+    display: flex;
+    color: black;
+    width: 70%;
+    padding: auto 2rem;
+    margin: 10px 10px;
+    position: relative;
+    gap : 2rem;
+    animation: leftshow 750ms linear 1 alternate;
+    animation-timeline: view();
+    animation-range-start: 0 ;
+ 
+
+}
+
+.ColorStrip{
+    width: 0.45rem;
+    height: 90%;
+    background: red ;
+    position: absolute;
+    left: 10px;
+    border-radius: 50px;
+    
+}
+
+.DateDaybox{
+    background: #e6e4ce;
+    border: 4px solid gray;
+    border-radius: 10px ;
+    
+    padding: 16px;
+}
+.eventHeading{
+    font-weight: 600;
+    padding: 8px 0 0 0;
+    font-size: 1.15rem;
+    text-transform: capitalize;
+}
+
+.evetDetail{
+    margin: 0;
+    padding: 0 0 8px 0;
+    color: rgb(46, 46, 46);
+}
+.textSmallDim{
+    display: flex;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: gray;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+}
+.eventbox{
+    background: white;
+    border: 4px solid gray;
+    border-radius: 10px ;
+    padding: 4px 32px;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width : 956px){
+    .eventDiv{
+        width: 90%;
+        gap: 1em
+    }
+    
+}
+@media screen and (max-width : 768px){
+    .eventDiv{
+        width: 90%;
+        gap: 1em
+    }
+    
+}
+@media screen and (max-width : 564px){
+    .eventDiv{
+        width: 90%;
+        position: relative;
+        gap: 1em
+    }
+    .eventbox{
+        position: relative;
+        padding-top: 2rem;
+    }
+
+    .DateDaybox{
+        position: absolute;
+        left: 0;
+        z-index: 10;
+        padding:2px 4px;
+        margin: 0;
+        font-size: 0.85rem;
+        opacity: 1;
+        font-size: 0.75rem;
+        flex-direction: row;
+    }
+    .ColorStrip{
+        height: 70%;
+    }
+}
+
+@keyframes sectionAnimation {
+    from{
+      transform: translateY(10px);
+      opacity: 0;
+      scale: 0.8;
+    }
+    to{
+      transform: translateY(0px);
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+.flexColCenter{
+    animation: sectionAnimation linear;
+    animation-timeline: view(100vh 0);
+}
