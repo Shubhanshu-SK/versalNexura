@@ -194,7 +194,8 @@
   .closeDiv{
     display: flex;
     justify-content: flex-end;
-    
+    align-items: self-end;
+    flex-direction: column;
   }
   .close{
     text-align: end;
