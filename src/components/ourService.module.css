@@ -26,6 +26,9 @@ li{
     color : #7209b7;
     
 }
+.ourServicesBlock h2{
+    color :inherit;
+}
 
 .flexCol{
     display: flex;
