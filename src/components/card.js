@@ -9,7 +9,7 @@ function Card({ image, name, position, description }) {
     
     setTimeout(() => {
       hidepopUp()
-    }, 10000);
+    }, 8500);
   }
   const hidepopUp = ()=>{
   
@@ -35,14 +35,16 @@ function Card({ image, name, position, description }) {
       </div>
     </div>
     <div ref={popUp} className="popUp">
-        <p>
-            {description}
-        </p>
       <div className="closeDiv" onClick={hidepopUp}>
+      
         <div className="close">
         +
         </div>
-        </div>
+        
+        <p>
+            {description}
+        </p>
+      </div>
     </div>
 
     </>
