@@ -8,16 +8,17 @@ import { hover } from "framer-motion";
 const Coordinators = () => {
     // Test data
     const faculty = [
-        {
-            image: "/people/rishabh tomar.png",
-            name: "Rishabh Tomar",
-            position: "Head of Department of Automobile Engineering chief Patron /Head of Nexura",
-            description: "Test description"
-        },
+        
         {
             image: "/people/rishabh tomar.png",
             name: "Mr. Aditya Pratap Singh",
             position: "Professor of Department of Automobile Engineering Faculty Coordinator of Nexura",
+            description: "Test description"
+        },
+        {
+            image: "/people/rishabh tomar.png",
+            name: "Dr. Alka Bani",
+            position: "Head of Department of Automobile Engineering chief Patron /Head of Nexura",
             description: "Test description"
         },
         {
