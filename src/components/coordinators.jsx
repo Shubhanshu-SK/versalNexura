@@ -11,19 +11,19 @@ const Coordinators = () => {
         {
             image: "/people/rishabh tomar.png",
             name: "Rishabh Tomar",
-            position: "B.Tech in Automobile Engineering",
+            position: "Head of Department of Automobile Engineering chief Patron /Head of Nexura",
             description: "Test description"
         },
         {
             image: "/people/rishabh tomar.png",
-            name: "Rishabh Tomar",
-            position: "B.Tech in Automobile Engineering",
+            name: "Mr. Aditya Pratap Singh",
+            position: "Professor of Department of Automobile Engineering Faculty Coordinator of Nexura",
             description: "Test description"
         },
         {
             image: "/people/rishabh tomar.png",
-            name: "Rishabh Tomar",
-            position: "B.Tech in Automobile Engineering",
+            name: "Mr. Vikas Verma ",
+            position: "Professor at Department of Automobile Engineering Faculty Coordinator of Nexura",
             description: "Test description"
         },
     
@@ -75,7 +75,7 @@ const Coordinators = () => {
         {
             image: "/people/Sameer sir.png",
             name: "Mohammad Sameer ",
-            position: "B.Tech in Automobile Engineering",
+            position: "Frontend Developer",
             description: "Mohammad Sameer, a Petrochemical Technology Engineering student at UIT-RGPV, Bhopal, is passionate about web development. A member of Nexura's Front-End Web Development team, he has four months of experience, working on projects like Tic-Tac-Toe, Stone-Paper-Scissors, and a Currency Converter. Currently exploring Tailwind CSS, he focuses on modern, efficient design. Beyond coding, he enjoys outdoor sports, driving, and gaming. With a growth mindset, he aims to master full-stack development and impact web technologies."
         },
         
