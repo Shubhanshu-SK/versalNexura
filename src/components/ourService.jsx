@@ -8,6 +8,9 @@ function OurService() {
 
     const [data, setData] = useState([])
 
+    const [links, setlinks] = useState([])
+    let linkarr = ["https://google.com","https://namansharma28.github.io/Nexura-Webdevelopment-final/","https://google.com","https://google.com","https://google.com"]
+
     let dataObject = {
         'UI/UX Design': ['User-Centric Design',
             'Wireframing & Prototyping',
@@ -15,20 +18,20 @@ function OurService() {
             'Website design',
             'Mobile & Web UI/UX',
             'Usability Testing & Optimization'],
-
+            
         'Web Development': ['Full-Stack Development',
             'Custom Web Applications',
             'E-Commerce & CMS Solutions',
             'API Integration & Backened Solutions',
             'Responsive & Mobile-Optimized Websites'],
-
-        '3D Modelling And Animation': ['High-Quality 3D Models',
-            'Photorealistic Rendering',
-            'Dynamic Animation & VFX',
-            'Product Visualization',
-            'Motion Graphic & Explainar Videos'],
-        'Parametric Modelling and Simulation': ['Advanced CAD Modelling',
-            'Finite Element Analysis (FEA)',
+            
+            '3D Modelling And Animation': ['High-Quality 3D Models',
+                'Photorealistic Rendering',
+                'Dynamic Animation & VFX',
+                'Product Visualization',
+                'Motion Graphic & Explainar Videos'],
+                'Parametric Modelling and Simulation': ['Advanced CAD Modelling',
+                    'Finite Element Analysis (FEA)',
             'Engineering Simulations (Stress, Thermal, Motion)'],
         'Public Relations and Operations': ['Strategic Communication',
             'Content & Digital Marketing',
@@ -46,6 +49,7 @@ function OurService() {
     
     useEffect(() => {
       setData(dataObject)
+      setlinks(linkarr)
     }, [])
 
     
@@ -65,8 +69,11 @@ function OurService() {
     const box = (props , index)=>{
          
         return (
+            
             <>
-            <div className={css.container} >
+            <a  href={links[index]} target='_blank'>
+
+            <div  className={css.container} >
 
                 <h2 className={css.deptContainer}>
                     {Object.keys(props)[index]}
@@ -84,6 +91,7 @@ function OurService() {
                     </div>
                 </div>
             </div>
+            </a>
             </>
             
         )
