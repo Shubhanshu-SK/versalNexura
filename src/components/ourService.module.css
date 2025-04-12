@@ -14,6 +14,15 @@ li{
     font-weight: 300;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: color 150ms linear;
+}
+a:hover{
+    color : #02568b;
+}
+
 .ourServicesBlock{
     margin: 2rem;
     padding: 1rem;
