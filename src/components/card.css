@@ -214,13 +214,17 @@
     position: relative;
   }
   
-  @media (max-width:645px) {
-    .card:hover .overlay {
-      opacity: 1;
-      color: whitesmoke;
-    }
+ @media (max-width:645px) {
+    
     .popUp{
       font-size: 1.1em;
+    }
+    .image-container{
+      height: 200px;
+    }
+    .card {
+      width: 230px;
+      min-height: 300px;
     }
   }
   
