@@ -41,13 +41,14 @@
 }
 
 .logo {
-    width: 270px;
+    width: 220px;
+    scale: 2;   
     height: auto;
     max-width: 100%;
     object-fit: contain;
     transform: rotate(180deg);
     filter: drop-shadow(10px 5px 40px rgba(102, 51, 153, 0.8) );
-    
+    z-index: -5;
 }
 
 /* Text Content Styling */
@@ -56,6 +57,7 @@
     padding: 20px;
     text-align: center;
     left: 0;
+    z-index: 2;
 }
 
 .textContent h1 {
@@ -128,7 +130,8 @@
     position: relative;
     font-weight: 700;
     text-align: center;
-    animation: slidemoto 0.8s ease-out 1 reverse;
+    animation: slidemoto 0.8s ease-out 2s 1 reverse;
+    z-index: 2;
 }
 
 .motoContainer span{
@@ -146,15 +149,16 @@
     color: #7209b7;
     font-weight: 800;
     width: 100%;
-    margin: 0 1rem;
-    animation: slideH1 0.5s ease-out 1 reverse;
+    margin: 0 0rem;
+    animation: slideH1 0.5s ease-out 2s 1 reverse;
 }
 
 @media only screen and (min-width: 1224px) {
     .logo{
         width: initial;
-        animation: showLogo 1.2s ease  1 reverse;
+        animation: showLogo 1.2s ease 2s 1 reverse;
         filter: opacity(.99);
+        scale: 3
        
     }
     .mainContent{
@@ -173,12 +177,12 @@
     
     
     .textContent h1{
-        animation: slideH1 0.8s ease-out 1 reverse;
+        animation: slideH1 0.8s ease-out 2s 1 reverse;
         
     }
     .textContent p {
         line-height: normal;
-        animation: slide 1s ease-out 1 reverse;
+        animation: slide 1s ease-out 2s 1 reverse;
         
     }
 
@@ -209,6 +213,7 @@
 
     .logo {
         width: 200px;
+        scale: 2.5;
     }
 
     .textContent {
@@ -242,7 +247,7 @@
 }
 
 .logoContainer{
-    animation: moon 2.7s linear infinite alternate;
+    animation: moon 2.7s linear 2s infinite alternate;
     
 }
 
