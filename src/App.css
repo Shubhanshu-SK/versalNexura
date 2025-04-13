@@ -25,6 +25,22 @@ h2{
   animation-timeline: view(60vh auto);
 }
 
+#introVideo{
+  background: #000 ;
+  /* height: 100%; */
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top:0;
+  z-index: 1001;
+  text-align: center;
+  animation: intro 2s ease-out 3s 1 forwards ;
+}
+@keyframes intro{
+  0%{opacity: 1; display: block;}
+  99%{display: none;}
+  100%{opacity: 0; display: none;}
+}
 video {
     position: fixed;
     z-index: -5;
