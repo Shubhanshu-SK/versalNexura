@@ -8,7 +8,7 @@
 }
 .container {
     /* color: black; */
-    min-height: 100vh;
+    /* min-height: 80vh; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,6 +30,7 @@
     max-width: 1500px;
     width: 90%;
     padding-top: 110px;
+    margin-bottom: 110px;
     position: relative;
 }
 
@@ -154,6 +155,9 @@
 }
 
 @media only screen and (min-width: 1224px) {
+    .container{
+        min-height: 100vh ;
+    }
     .logo{
         width: initial;
         animation: showLogo 1.2s ease 2s 1 reverse;
@@ -188,6 +192,7 @@
 
 }
 @media (max-width: 1024px) {
+
     .mainContent {
         flex-direction: column;
         align-items: center;
@@ -202,6 +207,7 @@
     .textContent p {
         font-size: 1rem;
     }
+    
 
 }
 
