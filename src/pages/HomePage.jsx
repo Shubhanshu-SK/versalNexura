@@ -10,7 +10,7 @@ const HomePage = () => {
           Creation <span>leads</span>  Victory <span>follow</span></p>
         </div>
         <div className={styles.logoContainer}>
-          <img src="/images/LOGO NEXURA 1.png" alt="Nexura Logo" className={styles.logo} />
+          <img src="/images/NavLogo.png" alt="Nexura Logo" className={styles.logo} />
         </div>
 
         <div className={styles.textContent}>
