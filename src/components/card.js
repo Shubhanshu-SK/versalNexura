@@ -9,7 +9,7 @@ function Card({ image, name, position, description }) {
     
     setTimeout(() => {
       hidepopUp()
-    }, 1000);
+    }, 10000);
   }
   const hidepopUp = ()=>{
   
