@@ -13,6 +13,7 @@ import Domains from './components/domains';
 import Coordinators from './components/coordinators';
 import UpcomingEvents from './components/UpcomingEvents';
 import BG from './BG.mp4';
+import introVideo from './introVideo';
 import LoadingPage from './components/LoadingPage';
 import axios from 'axios';
 
@@ -60,7 +61,9 @@ function App() {
       </video>
       <div className="background-layer" data-theme="dark" ></div>
       <div className='containComponents'>
-
+      <video id='introVideo'  className='introVideo' autoPlay muted>
+          <source src={introVideo}/>
+       </video>
         <NavBar />
         <HomePage />
         <Intro />
