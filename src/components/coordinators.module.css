@@ -26,3 +26,8 @@
     gap: 3em;
     width: 100%;
 }
+@media (max-width: 1024px){
+    .cardGrid{
+        gap: 0;
+    }
+}
