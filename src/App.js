@@ -13,7 +13,7 @@ import Domains from './components/domains';
 import Coordinators from './components/coordinators';
 import UpcomingEvents from './components/UpcomingEvents';
 import BG from './BG.mp4';
-import introVideo from './introVideo';
+import introVideo from './introVideo.mp4';
 import LoadingPage from './components/LoadingPage';
 import axios from 'axios';
 
@@ -68,11 +68,11 @@ function App() {
         <HomePage />
         <Intro />
         <Domains />
-        <Coordinators />
         <UpcomingEvents />
         <EventFunc />
         <DontMiss />
         <OurServices />
+        <Coordinators />
         <FAQ />
         <Contact />
       </div>
