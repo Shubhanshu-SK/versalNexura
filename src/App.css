@@ -34,7 +34,7 @@ h2{
   top:0;
   z-index: 1001;
   text-align: center;
-  animation: intro 2s ease-out 3s 1 forwards ;
+  animation: intro 2s ease-out 2s 1 forwards ;
 }
 @keyframes intro{
   0%{opacity: 1; display: block;}
