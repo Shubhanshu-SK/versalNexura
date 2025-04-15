@@ -55,6 +55,6 @@ const StyledWrapper = styled.div`
     align-items: center;
     justify-content: center;
     height: 100%;
-    
+    column-gap: 15px;
         }`;
 export default Domains;
