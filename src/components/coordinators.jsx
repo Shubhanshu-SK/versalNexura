@@ -68,7 +68,7 @@ const Coordinators = () => {
             description:"Mradul Shivhare, a web developer with three years of experience, is a Senior Member of the Web Development Department at Nexura. A graduate of UIT-RGPV, Bhopal, he excels in building seamless, high-performance web solutions, from front-end design to backend optimization. Passionate about innovation, he constantly explores new technologies to push digital boundaries. For Mradul, web development is more than coding—it’s about solving problems and shaping the future of the web."
         },
         {
-            image: "/people/Harshit Sir.jpg",
+            image: "/people/rishabh tomar.png",
             name: "Harshit Mishra",
             position: "Head of Public relation & Operation |Pre-Final year Mechanical Engineering Student | PR & HR Enthusiast ",
             description: "Fascinated by machines and cars since childhood, Harshit pursued Mechanical Engineering at UIT-RGPV, Bhopal. In his freshman year, he discovered a passion for Public Relations, Operations, and HR Management, where strategy meets people. Defined by hard work and determination, he values teamwork, leadership, and strong communication. Believing in continuous growth, he thrives on learning, adapting, and gaining hands-on experience. His goal is to keep building skills and embracing challenges that push him to the next level."
