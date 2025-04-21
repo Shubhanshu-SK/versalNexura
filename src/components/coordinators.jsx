@@ -76,7 +76,7 @@ const Coordinators = () => {
         {
             image: "/people/Sameer sir.png",
             name: "Mohammad Sameer ",
-            position: "Frontend Developer Member, Nexura",
+            position: "Frontend Developer Senior Member, Nexura",
             description: "Mohammad Sameer, a Petrochemical Technology Engineering student at UIT-RGPV, Bhopal, is passionate about web development. A member of Nexura's Front-End Web Development team, he has four months of experience, working on projects like Tic-Tac-Toe, Stone-Paper-Scissors, and a Currency Converter. Currently exploring Tailwind CSS, he focuses on modern, efficient design. Beyond coding, he enjoys outdoor sports, driving, and gaming. With a growth mindset, he aims to master full-stack development and impact web technologies."
         },
         
