@@ -17,7 +17,7 @@ const Coordinators = () => {
         },
         {
             image: "/people/rishabh tomar.png",
-            name: "Dr. Alka Bani Agarwal",
+            name: "Dr. Alka Bani Agrawal",
             position: "Head of Department of Automobile Engineering chief Patron | Head of Nexura",
             description: "Test description"
         },
@@ -53,7 +53,7 @@ const Coordinators = () => {
         {
             image: "/people/Vishal.jpg",
             name: "Vishal Singh Thakur",
-            position: "Mentor - UI/UX | Member, Nexura",
+            position: "Mentor - UI/UX | Senior Member, Nexura",
             description: "Vishal Singh Thakur, a Mechanical Engineering student at UIT-RGPV, Bhopal, is passionate about 3D Animation and UI/UX Design. As a UI/UX Mentor and active member at Nexura, he is refining his skills to create intuitive digital experiences. With four months of hands-on experience, he blends creativity with technology. Beyond design, he enjoys cricket, singing, eSports, dancing, and reading. Always eager to learn and innovate, Vishal aims to make an impact in both technical and creative fields."
         },
         {
