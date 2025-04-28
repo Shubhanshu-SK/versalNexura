@@ -141,9 +141,6 @@
     color: #7209b7;
  
 }
-.textContent p::first-line {
-    font-size: 1.5em;
-}
 
 .textContent h1 b{
     font-size: 48px;
