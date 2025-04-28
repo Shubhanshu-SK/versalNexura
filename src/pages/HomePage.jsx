@@ -7,7 +7,7 @@ const HomePage = () => {
       <main className={styles.mainContent}>
         <div className={styles.motoContainer}>
           <p>
-          Creation <span>leads</span>  Victory <span>follow</span></p>
+          Creation <span>Leads</span>  Victory <span>Follows</span></p>
         </div>
         <div className={styles.logoContainer}>
           <img src="/images/NavLogo.png" alt="Nexura Logo" className={styles.logo} />
