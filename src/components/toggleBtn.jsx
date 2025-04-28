@@ -170,7 +170,7 @@ const Popup = styled.div`
   top: 3rem;
   left: 0%;
   transform: translateX(-50%);
-  background: rgba(100, 10, 86, 0.8);
+  background: #391054;
   backdrop-filter: blur(24px)
   color: #fff;
   padding: 8px 12px;
