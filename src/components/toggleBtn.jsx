@@ -2,40 +2,35 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Switch = () => {
-    const [isDark, setIsDark] = useState(false);
+    const [isDark, setIsDark] = useState(true);
+    const [showPopup, setShowPopup] = useState(false);
 
     const toggleSwitch = () => {
-        const newTheme = !isDark;
-        setIsDark(newTheme);
-        if (newTheme) {
-            document.querySelector(".background-layer").removeAttribute('data-theme', 'light');
-            document.body.style.color = '#000';
-            document.querySelector("#ContactCont").style.background = 'rgba(26, 26, 26, 0.64)';
-            document.querySelector("#Contact").style.color = 'rgb(255, 255, 255)';
-            document.querySelector("#social").style.color = 'rgb(255, 255, 255)';
-            document.querySelector("#social2").style.color = 'rgb(255, 255, 255)';
-
-        } else {
-            document.querySelector(".background-layer").setAttribute('data-theme', 'dark');
-            document.body.style.color = '#fff';
-            document.querySelector("#ContactCont").style.background = 'rgba(255, 255, 255, 0.625)'; 
-            document.querySelector("#Contact").style.color = 'rgb(0, 0, 0)';
-            document.querySelector("#social").style.color = 'rgb(0, 0, 0)';
-
-            document.querySelector("#social2").style.color = 'rgb(0, 0, 0)';
-        }
-    }
+        // First move to light mode
+        setIsDark(false);
+        
+        // After a short delay, move back to dark mode
+        setTimeout(() => {
+            setIsDark(true);
+            
+            // Show the popup message
+            setShowPopup(true);
+            
+            // Hide the popup after 3 seconds
+            setTimeout(() => {
+                setShowPopup(false);
+            }, 3000);
+        }, 500); // Wait 500ms before switching back
+    };
 
     return (
         <StyledWrapper>
             <label className="switch">
                 <input 
-
-                    defaultChecked={isDark} 
+                    checked={!isDark} 
                     id="checkbox" 
                     type="checkbox"
                     onChange={toggleSwitch}
-                    
                 />
                 <span className="slider">
                     <div className="star star_1" />
@@ -46,31 +41,35 @@ const Switch = () => {
                     </svg>
                 </span>
             </label>
+
+            {showPopup && (
+                <Popup>💡 Light attracts Bugs!<br />Keep it Dark!?</Popup>
+            )}
         </StyledWrapper>
     );
-}
+};
 
 const StyledWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+
   /* Theme Switch */
-  /* The switch - the box around the slider */
   .switch {
-    font-size: 12px;
+    font-size: 15px;
     position: relative;
     display: inline-block;
     width: 4em;
-    height: 2.2em;
+    height: 2em;
     border-radius: 30px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   }
 
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
 
-  /* The slider */
   .slider {
     position: absolute;
     cursor: pointer;
@@ -78,7 +77,7 @@ const StyledWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgb(42, 42, 42);
+    background-color: rgb(42,42,42);
     transition: 0.4s;
     border-radius: 30px;
     overflow: hidden;
@@ -98,13 +97,13 @@ const StyledWrapper = styled.div`
   }
 
   .switch input:checked + .slider {
-    background-color:rgba(55, 7, 113, 0.73);
+    background-color: rgba(55,7,113,0.73);
   }
 
   .switch input:checked + .slider:before {
     transform: translateX(1.8em);
     box-shadow: inset 15px -4px 0px 15px rgb(243, 190, 140),
-                  0px 5px 15px 1px rgb(254, 123, 0);
+                  0px 5px 15px 1px rgb(254,123,0);
   }
 
   .star {
@@ -146,6 +145,41 @@ const StyledWrapper = styled.div`
 
   .switch input:checked ~ .slider .cloud {
     opacity: 1;
-  }`;
+  }
+  @media (max-width: 425px) {
+    .switch {
+      height: 1em;
+      width: 2em;
+      margin-left: -15px;
+      z-index: 1000;
+    }
+    .star {
+    height: 2.5px;
+    width: 2.5px;
+    }
+    .slider:before {
+    height: 0.8em;
+    width: 0.8em;
+    bottom: 0.4em;
+    }
+  }
+`;
+
+const Popup = styled.div`
+  position: absolute;
+  top: 3rem;
+  left: 0%;
+  transform: translateX(-50%);
+  background: rgba(100, 10, 86, 0.8);
+  backdrop-filter: blur(24px)
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  z-index: 99999999;
+`;
 
 export default Switch;
