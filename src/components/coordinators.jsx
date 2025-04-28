@@ -79,20 +79,14 @@ const Coordinators = () => {
             position: "Senior Member Nexura",
             description: "Mohammad Sameer, a Petrochemical Technology Engineering student at UIT-RGPV, Bhopal, is passionate about web development. A member of Nexura's Front-End Web Development team, he has four months of experience, working on projects like Tic-Tac-Toe, Stone-Paper-Scissors, and a Currency Converter. Currently exploring Tailwind CSS, he focuses on modern, efficient design. Beyond coding, he enjoys outdoor sports, driving, and gaming. With a growth mindset, he aims to master full-stack development and impact web technologies."
         },
-        
+        {
+            image: "/people/rishabh tomar.png",
+            name: "Ansh Juneja ",
+            position: "Senior Mentor PR",
+            description: "Pre-Final year Electronic Engineering Student |PR & HR Enthusiast"
+        },
         // Add more test data if needed
     ];
-
-    // const PopUp=(props)=>{
-    //     return(
-    //         <div style={{position:'fixed', top:'40%', width:'200px', height:'200px'}}>
-    //             <p>
-    //                 {props.description}
-    //             </p>
-
-    //         </div>
-    //     )
-    // }
 
     return (
         <div className={styles.allContainer} id="Team">
