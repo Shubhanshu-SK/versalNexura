@@ -43,7 +43,7 @@ const Switch = () => {
             </label>
 
             {showPopup && (
-                <Popup>💡 Light attracts Bugs!<br />Keep it Dark!?</Popup>
+                <Popup className='popup'>💡 Light attracts Bugs!<br />Keep it Dark!?</Popup>
             )}
         </StyledWrapper>
     );
@@ -148,27 +148,16 @@ const StyledWrapper = styled.div`
   }
   @media (max-width: 425px) {
     .switch {
-      height: 1em;
-      width: 2em;
-      margin-left: -15px;
-      z-index: 1000;
+      font-size: 12px;
     }
-    .star {
-    height: 2.5px;
-    width: 2.5px;
-    }
-    .slider:before {
-    height: 0.8em;
-    width: 0.8em;
-    bottom: 0.4em;
-    }
+   
   }
-`;
-
-const Popup = styled.div`
+  `;
+  
+  const Popup = styled.div`
   position: absolute;
   top: 3rem;
-  left: 0%;
+  left: 60%;
   transform: translateX(-50%);
   background: #391054;
   backdrop-filter: blur(24px)
@@ -180,6 +169,13 @@ const Popup = styled.div`
   opacity: 1;
   transition: opacity 1s ease-in-out;
   z-index: 99999999;
-`;
+
+  @media (max-width: 692px) {
+    .popup {
+      right: 10%;
+    }
+   
+  }
+  `;
 
 export default Switch;
