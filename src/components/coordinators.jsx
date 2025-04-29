@@ -10,7 +10,7 @@ const Coordinators = () => {
     const faculty = [
         
         {
-            image: "/people/rishabh tomar.png",
+            image: "/people/mr. vikas verma.jpeg",
             name: "Mr. Aditya Pratap Singh",
             position: "Professor of Department of Automobile Engineering | Faculty Coordinator of Nexura",
             description: "Test description"
@@ -22,7 +22,7 @@ const Coordinators = () => {
             description: "Test description"
         },
         {
-            image: "/people/rishabh tomar.png",
+            image: "/people/mr. aditya pratap singh.jpeg",
             name: "Mr. Vikas Verma ",
             position: "Professor at Department of Automobile Engineering | Faculty Coordinator of Nexura",
             description: "Test description"
