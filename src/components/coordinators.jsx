@@ -59,12 +59,12 @@ const Coordinators = () => {
         {
             image: "/people/Rishabh.png",
             name: "Rishabh Tomar",
-            position: "Senior Member Nexura",
+            position: "Senior Member, Nexura",
             description: "I'm Rishabh Tomar,Currently pursuing a B.Tech in Automobile Engineering from UIT RGPV, A passionate 3D artist with a keen eye for detail and creativity. After completing my schooling from St. Mary's Residential H.S. School. Alongside my academic pursuits in the dynamic field of automobile engineering, I also explores the world of 3D modeling, bringing my imaginative ideas to life through my artistic skills. Combining technical knowledge with artistic talent, I am dedicated to refining my craft and expanding my expertise in field of 3D, aiming to make a mark in the intersection of technology and design."
         },{
             image: "/people/Mradul.jpg",
             name: "Mradul Shivhare",
-            position: "Senior Member Nexura",
+            position: "Senior Member, Nexura",
             description:"Mradul Shivhare, a web developer with three years of experience, is a Senior Member of the Web Development Department at Nexura. A graduate of UIT-RGPV, Bhopal, he excels in building seamless, high-performance web solutions, from front-end design to backend optimization. Passionate about innovation, he constantly explores new technologies to push digital boundaries. For Mradul, web development is more than coding—it’s about solving problems and shaping the future of the web."
         },
         {
@@ -76,7 +76,7 @@ const Coordinators = () => {
         {
             image: "/people/Sameer sir.png",
             name: "Mohammad Sameer ",
-            position: "Senior Member Nexura",
+            position: "Senior Member, Nexura",
             description: "Mohammad Sameer, a Petrochemical Technology Engineering student at UIT-RGPV, Bhopal, is passionate about web development. A member of Nexura's Front-End Web Development team, he has four months of experience, working on projects like Tic-Tac-Toe, Stone-Paper-Scissors, and a Currency Converter. Currently exploring Tailwind CSS, he focuses on modern, efficient design. Beyond coding, he enjoys outdoor sports, driving, and gaming. With a growth mindset, he aims to master full-stack development and impact web technologies."
         },
         {
