@@ -7,7 +7,7 @@ function DontMiss() {
   return (
     <div className={css.dontMiss}>
         <div>
-            <h1>Don't Miss Out!</h1>
+            <h1>Don't Miss Out</h1>
         </div>
         <p>
             be the first to know about our latest events. Join the Nexura community today!
