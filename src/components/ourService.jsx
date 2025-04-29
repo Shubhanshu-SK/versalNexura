@@ -29,7 +29,7 @@ function OurService() {
                 'Photorealistic Rendering',
                 'Dynamic Animation & VFX',
                 'Product Visualization',
-                'Motion Graphic & Explainar Videos'],
+                'Motion Graphic & Explainer Videos'],
                 'Parametric Modelling and Simulation': ['Advanced CAD Modelling',
                     'Finite Element Analysis (FEA)',
             'Engineering Simulations (Stress, Thermal, Motion)'],
