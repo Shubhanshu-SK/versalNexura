@@ -35,12 +35,12 @@ function OurService() {
             'Engineering Simulations (Stress, Thermal, Motion)'],
         'Public Relations and Operations': ['Strategic Communication',
             'Content & Digital Marketing',
-            'rand Reputation Management',
+            'Brand Reputation Management',
             'Social Media Management',
             'Public Relations & Media Outreach',
             'Event Planning & Coordination',
             'Business Process Automation',
-            'Client Engagement Strategies',
+            'Sponsor Engagement Strategies',
             'Performance Analytics & Reporting',
             'Operational Efficiency & Workflow Optimization'
         ]
