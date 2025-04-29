@@ -4,7 +4,7 @@ import styles from "./intro.module.css";
 const VisionMission = () => {
   return (
     <div className={styles.visionMissionContainer} id="About">
-      <h2 className={styles.title}>Empowering Talent, Accelerating Innovation!</h2>
+      <h2 className={styles.title}>Empowering Talent, Accelerating Innovation</h2>
       <div className={styles.visionMissionContent}>
         <div className={styles.box}>
           <h3>Our Vision</h3>
