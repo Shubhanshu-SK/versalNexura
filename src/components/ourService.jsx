@@ -9,7 +9,7 @@ function OurService() {
     const [data, setData] = useState([])
 
     const [links, setlinks] = useState([])
-    let linkarr = ["https://namansharma28.github.io/Nexura-UI-UX-Department/","https://namansharma28.github.io/Nexura-Webdevelopment-final/","https://namansharma28.github.io/Nexura-3D-Department/","https://google.com","https://google.com"]
+    let linkarr = ["https://namansharma28.github.io/Nexura-UI-UX-Department/","https://namansharma28.github.io/Nexura-Webdevelopment-final/","https://namansharma28.github.io/Nexura-3D-Department/","https://namansharma28.github.io/Parametric-Modelling-dept-Nexura/","https://google.com"]
 
     let dataObject = {
         'UI/UX Design': ['User-Centric Design',
