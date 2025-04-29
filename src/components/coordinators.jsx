@@ -39,7 +39,7 @@ const Coordinators = () => {
         },
 
         {
-            image: "/people/pawan soni.jpeg",
+            image: "/people/pawan soni.jpg",
             name: "Pawan Soni",
             position: "Head of 3D modelling and Animation | head of Parametric Modelling and Simulation | Executive Board member , Nexura ",
             description:"Pawan Soni, a B.Tech student in Automobile Engineering at UIT-RGPV Bhopal, is passionate about 3D animation, VFX, and parametric modeling. As Head of 3D Modeling and Animation and an Executive Board Member at Nexura, he brings technical ideas to life with high-quality visuals. Skilled in SolidWorks and ANSYS simulations, he blends creativity with engineering precision. Always eager to innovate, Pawan pushes the boundaries of 3D visualization and simulation, contributing to cutting-edge projects."
