@@ -82,8 +82,8 @@ const Coordinators = () => {
         {
             image: "/people/rishabh tomar.png",
             name: "Ansh Juneja ",
-            position: "Senior Mentor PR",
-            description: "Pre-Final year Electronic Engineering Student |PR & HR Enthusiast"
+            position: "Pre-Final year Electronic Engineering Student |PR & HR Enthusiast",
+            description: "Ansh Juneja a pre-final year student at UIT-RGPV, specializing in Electronics and Communication Engineering. Passionate about technology, I have gained hands-on experience in circuit design, embedded systems, and telecommunications through both academic learning and practical projects. I also place a strong emphasis on effective communication and teamwork, understanding their critical role in successful project execution and professional growth."
         },
         // Add more test data if needed
     ];
