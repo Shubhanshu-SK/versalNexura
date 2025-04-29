@@ -39,7 +39,7 @@ const Coordinators = () => {
         },
 
         {
-            image: "/people/Pawan Sir.jpg",
+            image: "/people/pawan soni.jpeg",
             name: "Pawan Soni",
             position: "Head of 3D modelling and Animation | head of Parametric Modelling and Simulation | Executive Board member , Nexura ",
             description:"Pawan Soni, a B.Tech student in Automobile Engineering at UIT-RGPV Bhopal, is passionate about 3D animation, VFX, and parametric modeling. As Head of 3D Modeling and Animation and an Executive Board Member at Nexura, he brings technical ideas to life with high-quality visuals. Skilled in SolidWorks and ANSYS simulations, he blends creativity with engineering precision. Always eager to innovate, Pawan pushes the boundaries of 3D visualization and simulation, contributing to cutting-edge projects."
@@ -68,7 +68,7 @@ const Coordinators = () => {
             description:"Mradul Shivhare, a web developer with three years of experience, is a Senior Member of the Web Development Department at Nexura. A graduate of UIT-RGPV, Bhopal, he excels in building seamless, high-performance web solutions, from front-end design to backend optimization. Passionate about innovation, he constantly explores new technologies to push digital boundaries. For Mradul, web development is more than coding—it’s about solving problems and shaping the future of the web."
         },
         {
-            image: "/people/rishabh tomar.png",
+            image: "/people/harshit mishra.jpeg",
             name: "Harshit Mishra",
             position: "Head of Public relation & Operation |Pre-Final year Mechanical Engineering Student | PR & HR Enthusiast ",
             description: "Fascinated by machines and cars since childhood, Harshit pursued Mechanical Engineering at UIT-RGPV, Bhopal. In his freshman year, he discovered a passion for Public Relations, Operations, and HR Management, where strategy meets people. Defined by hard work and determination, he values teamwork, leadership, and strong communication. Believing in continuous growth, he thrives on learning, adapting, and gaining hands-on experience. His goal is to keep building skills and embracing challenges that push him to the next level."
@@ -80,7 +80,7 @@ const Coordinators = () => {
             description: "Mohammad Sameer, a Petrochemical Technology Engineering student at UIT-RGPV, Bhopal, is passionate about web development. A member of Nexura's Front-End Web Development team, he has four months of experience, working on projects like Tic-Tac-Toe, Stone-Paper-Scissors, and a Currency Converter. Currently exploring Tailwind CSS, he focuses on modern, efficient design. Beyond coding, he enjoys outdoor sports, driving, and gaming. With a growth mindset, he aims to master full-stack development and impact web technologies."
         },
         {
-            image: "/people/rishabh tomar.png",
+            image: "/people/ansh juneja.jpeg",
             name: "Ansh Juneja ",
             position: "Pre-Final year Electronic Engineering Student |PR & HR Enthusiast",
             description: "Ansh Juneja a pre-final year student at UIT-RGPV, specializing in Electronics and Communication Engineering. Passionate about technology, I have gained hands-on experience in circuit design, embedded systems, and telecommunications through both academic learning and practical projects. I also place a strong emphasis on effective communication and teamwork, understanding their critical role in successful project execution and professional growth."
