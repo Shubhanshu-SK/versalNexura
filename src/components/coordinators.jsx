@@ -12,7 +12,7 @@ const Coordinators = () => {
         {
             image: "/people/mr. aditya pratap singh.jpeg",
             name: "Mr. Aditya Pratap Singh",
-            position: "Professor of Department of Automobile Engineering | Faculty Coordinator of Nexura",
+            position: "Assistant Professor of Department of Automobile Engineering | Faculty Coordinator of Nexura",
             description: "Test description"
         },
         {
@@ -24,7 +24,7 @@ const Coordinators = () => {
         {
             image: "/people/mr. vikas verma.jpeg",
             name: "Mr. Vikas Verma ",
-            position: "Professor at Department of Automobile Engineering | Faculty Coordinator of Nexura",
+            position: "Assistant Professor at Department of Automobile Engineering | Faculty Coordinator of Nexura",
             description: "Test description"
         },
     
