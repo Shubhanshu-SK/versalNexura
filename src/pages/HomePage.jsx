@@ -16,11 +16,7 @@ const HomePage = () => {
         <div className={styles.textContent}>
           <h1>WELCOME TO <b>NEXURA</b> </h1>
           <p className={styles.welcomeText}>
-            Nexura is a student-led club under the Department of Automobile
-            Engineering at UIT-RGPV, Bhopal, dedicated to nurturing talent and
-            fostering interdisciplinary collaboration. We equip students with
-            practical skills and innovative mindsets to excel in emerging
-            technologies.
+            Nexura is a student-led club under the Department of Automobile Engineering at UIT-RGPV, Bhopal, dedicated to nurturing talent and fostering interdisciplinary collaboration in the field of Automobile Engineering, by integrating knowledge from domains such as electronics, computer science, and mechanical systems to develop cutting-edge mobility solutions.
           </p>
         </div>
       </main>
