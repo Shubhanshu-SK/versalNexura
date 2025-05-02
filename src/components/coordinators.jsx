@@ -16,7 +16,7 @@ const Coordinators = () => {
             description: "Test description"
         },
         {
-            image: "/people/rishabh tomar.png",
+            image: "/people/alka bani maam.jpeg",
             name: "Dr. Alka Bani Agrawal",
             position: "Head of Department of Automobile Engineering chief Patron | Head of Nexura",
             description: "Test description"
