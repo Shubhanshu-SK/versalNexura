@@ -44,6 +44,10 @@ function App() {
 
   }, [])
 
+  useEffect(()=>{
+    alert('Parametric Department Registrations are open now! [ https://forms.gle/K4KxDwo1vVzUze7r9 ]')
+  },[])
+
   useEffect(() => {
     cards.forEach(el => {
       observerToptoDown.observe(el)
