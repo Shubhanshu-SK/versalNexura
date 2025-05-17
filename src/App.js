@@ -48,7 +48,7 @@ function App() {
     
 if (window.confirm('Parametric Department recruitment is now open! Apply now to be a part of our creative tech team. \n (click OK to open recruitment form)'))
    {
-   window.open('https://forms.gle/K4KxDwo1vVzUze7r9', '_blank');
+   window.open('https://forms.gle/K4KxDwo1vVzUze7r9', '_blank' );
    };
     
   },[])
