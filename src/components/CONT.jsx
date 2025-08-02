@@ -16,7 +16,7 @@ const Contact = () => {
           <img src="/images/NavLogo.png" alt="join"/>
           <div className={styles.labls}>
             <strong className={`${styles.bk} ${styles.bfnt}`}>Join Us</strong>
-            <a href='https://forms.gle/K4KxDwo1vVzUze7r9'>Parametric Department recruitment form <a/>
+            <a href='https://forms.gle/K4KxDwo1vVzUze7r9'>Parametric Department recruitment form </a>
           </div>
         </div>
 
