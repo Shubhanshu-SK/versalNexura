@@ -16,7 +16,7 @@ import BG from './BG.mp4';
 import introVideo from './introVideo.mp4';
 import LoadingPage from './components/LoadingPage';
 import axios from 'axios';
-
+import RecruitmentDemo from './components/notification';
 
 function App() {
 
@@ -44,14 +44,7 @@ function App() {
 
   }, [])
 
-  useEffect(()=>{
-    
-if (window.confirm('Nexura recruitment is now open! Apply now to be a part of our creative tech team. \n (click OK to open recruitment form)'))
-   {
-   window.open('https://forms.gle/pdaLG1936wXXB2ui7', '_blank' );
-   };
-    
-  },[])
+
 
   useEffect(() => {
     cards.forEach(el => {
@@ -84,6 +77,7 @@ if (window.confirm('Nexura recruitment is now open! Apply now to be a part of ou
         <Coordinators />
         <FAQ />
         <Contact />
+        <RecruitmentDemo/>
       </div>
     </div>
   );
