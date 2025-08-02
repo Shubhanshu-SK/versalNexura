@@ -13,10 +13,12 @@ const Contact = () => {
 
       <div className={styles.contactInfo}>
         <div className={styles.contactItem}>
-          <img src="/images/NavLogo.png" alt="join"/>
+          <img src="/images/LOGO NEXURA 1.png" alt="join"/>
           <div className={styles.labls}>
             <strong className={`${styles.bk} ${styles.bfnt}`}>Join Us</strong>
-            <a href='https://forms.gle/K4KxDwo1vVzUze7r9'>Parametric Department recruitment form </a>
+            <p>
+            <a href='https://forms.gle/pdaLG1936wXXB2ui7'> recruitment form </a>
+            </p>
           </div>
         </div>
 
