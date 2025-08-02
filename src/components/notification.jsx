@@ -10,7 +10,7 @@ const RecruitmentNotification = ({
   actionText = 'Apply Now',
   onAction = () => {},
   position = 'bottom-right',
-  autoClose = false,
+  autoClose = true,
   autoCloseDelay = 90000
 }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -209,6 +209,8 @@ const RecruitmentNotification = ({
     }
   }, [show, autoClose, autoCloseDelay]);
 
+  
+  
   const handleClose = () => {
     setIsVisible(false);
     setTimeout(() => {
@@ -362,7 +364,7 @@ const RecruitmentNotification = ({
 
 // Demo component to show usage
 const RecruitmentDemo = () => {
-  const [showNotification, setShowNotification] = useState(true);
+  const [showNotification, setShowNotification] = useState(false);
   const [notificationConfig, setNotificationConfig] = useState({
     type: 'new-job',
     title: 'Register Now!',
@@ -373,7 +375,7 @@ const RecruitmentDemo = () => {
 
 
   const handleAction = () => {
-    // alert(`${notificationConfig.actionText} clicked for ${notificationConfig.company}!`);
+    
     window.open("https://forms.gle/pdaLG1936wXXB2ui7","_blank")
   };
 
@@ -381,7 +383,12 @@ const RecruitmentDemo = () => {
     setShowNotification(false);
   };
 
-
+  useEffect(() => {
+    setTimeout(() => {
+     setShowNotification(!showNotification)
+  }, 4250);
+    
+  },[])
   return (
     <div >
       <RecruitmentNotification
@@ -394,7 +401,7 @@ const RecruitmentDemo = () => {
         onAction={handleAction}
         onClose={handleClose}
         position="bottom-right"
-        autoClose={false}
+        autoClose={showNotification}
         autoCloseDelay={90000}
       />
     </div>
