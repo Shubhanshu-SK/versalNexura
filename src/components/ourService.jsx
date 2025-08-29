@@ -9,7 +9,7 @@ function OurService() {
     const [data, setData] = useState([])
 
     const [links, setlinks] = useState([])
-    let linkarr = ["https://namansharma28.github.io/Nexura-UI-UX-Department/","https://namansharma28.github.io/Nexura-Webdevelopment-final/","https://namansharma28.github.io/Nexura-3D-Department/","https://namansharma28.github.io/Parametric-Modelling-dept-Nexura/","https://google.com"]
+    let linkarr = ["https://nexura-ui-ux-department.vercel.app/","https://nexura-webdevelopment-final.vercel.app/","https://nexura-3-d-department.vercel.app/","https://parametric-modelling-dept-nexura.vercel.app/","https://versal-nexura.vercel.app/"]
 
     let dataObject = {
         'UI/UX Design': ['User-Centric Design',
